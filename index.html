@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>スポーツジム</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body id="body">
+    <header class="l-header">
+      <div class="u-container u-flex u-justify-space-between u-align-center">
+        <h1 class="l-header__logo">
+          <a href="#top"><img src="./assets/images/logo.png" alt="ロゴ" /></a>
+        </h1>
+        <nav class="l-header__nav" id="drawer">
+          <ul class="l-header__lists u-flex u-align-center">
+            <li class="l-header__item">
+              <a class="l-header__link" href="#about">ジムについて</a>
+            </li>
+            <li class="l-header__item">
+              <a class="l-header__link" href="#enroll">入会のご案内</a>
+            </li>
+            <li class="l-header__item">
+              <a class="l-header__link" href="#price">料金メニュー</a>
+            </li>
+            <li class="l-header__item">
+              <a class="l-header__link" href="#info">施設案内</a>
+            </li>
+            <li class="l-header__item">
+              <a class="l-header__link" href="#access">アクセス</a>
+            </li>
+            <li class="l-header__item">
+              <a class="l-header__link--btn" href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="c-burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="p-firstview" id="top">
+        <div class="u-container u-flex u-justify-end u-align-end">
+          <h1 class="p-firstview__slogan u-text-right">
+            短期間で成果が出る<br />健康的なパーソナルトレーニング
+          </h1>
+        </div>
+      </section>
+      <section class="p-about" id="about">
+        <div class="u-container">
+          <div class="p-about__content">
+            <div class="p-about__thumb">
+              <img src="./assets/images/about.png" alt="" />
+            </div>
+            <div class="p-about__body">
+              <h1 class="p-about__head">
+                なりたい自分になれる場所<br />一人一人に合わせたトレーニング
+              </h1>
+              <div class="p-about__description">
+                体を鍛えるだけではなく、美と健康を追求し、
+                ライフスタイルを向上させること。「日常の中にプライベートとワーク、フィットネスが融合する場所」
+                忙しいあなたが24時間いつでも帰れるフィットネスラウンジを作りたい。そんな思いから、「スポーツジム」は誕生しました。<br />
+                なりたい自分になれる場所をスポーツジムは提供しています。
+              </div>
+              <a href="#" class="c-btn">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-features" id="enroll">
+        <div class="u-container">
+          <h1 class="p-features__head u-text-center">
+            スポーツジムの3つの特徴
+          </h1>
+          <ul class="p-features__lists">
+            <li class="c-card">
+              <div class="u-relative">
+                <div class="c-card__thumb">
+                  <img src="./assets/images/card_img1.png" alt="" />
+                </div>
+                <p class="c-card__no"><span>POINT</span><span>1</span></p>
+              </div>
+              <div class="c-card__body">
+                <h2 class="c-card__head u-text-center">手ぶらで気軽に通える</h2>
+                <p class="c-card__description">
+                  シャツやタオルなど、トレーニングに必要なも
+                  のはすべて完備しているので仕事帰りにも通えます。
+                </p>
+                <div class="c-card__btn-wrapper">
+                  <a href="#" class="c-btn">詳しく見る</a>
+                </div>
+              </div>
+            </li>
+            <li class="c-card">
+              <div class="u-relative">
+                <div class="c-card__thumb">
+                  <img src="./assets/images/card_img2.png" alt="" />
+                </div>
+                <p class="c-card__no"><span>POINT</span><span>2</span></p>
+              </div>
+              <div class="c-card__body">
+                <h2 class="c-card__head u-text-center">
+                  マンツーマンでサポート
+                </h2>
+                <p class="c-card__description">
+                  専属のトレーナーが、あなたの健康面も含めてマンツーマンでサポートします。
+                </p>
+                <div class="c-card__btn-wrapper">
+                  <a href="#" class="c-btn">詳しく見る</a>
+                </div>
+              </div>
+            </li>
+            <li class="c-card">
+              <div class="u-relative">
+                <div class="c-card__thumb">
+                  <img src="./assets/images/card_img3.png" alt="" />
+                </div>
+                <p class="c-card__no"><span>POINT</span><span>3</span></p>
+              </div>
+              <div class="c-card__body">
+                <h2 class="c-card__head u-text-center">品川駅から徒歩1分</h2>
+                <p class="c-card__description">
+                  駅近なので会社帰りにも、気軽に通えます。ス
+                  ポーツジムには充実した設備が揃っています。
+                </p>
+                <div class="c-card__btn-wrapper">
+                  <a href="#" class="c-btn">詳しく見る</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="p-price" id="price">
+        <div class="u-container">
+          <h1 class="p-price__head">料金 / メニュー</h1>
+          <article class="c-plan">
+            <h2 class="c-plan__head--first">多種多様なプラン</h2>
+            <div class="c-plan__content">
+              <div>
+                <div class="c-plan__thumb">
+                  <img src="./assets/images/plan_img.png" alt="" />
+                </div>
+                <div class="c-plan__descriptions">
+                  <p>
+                    多種多様なプランから自分に合ったプランを選択できます。しかも、途中でプランの変更も可能なので、「もっと通いたい！」「最近仕事が多忙になってきたから、ペースを落としたい」など、生活の変化に合わせて通う頻度も変更できるため無駄なく利用できます。
+                  </p>
+                  <p>
+                    一般会員の他にも、様々なプランをご用意しております。仕事終わりに利用したい方には平日の19時以降から利用できるナイト会員がおすすめです。
+                  </p>
+                </div>
+              </div>
+              <div class="c-plan__table-wrapper">
+                <table class="c-plan__table--first">
+                  <tr>
+                    <td></td>
+                    <td>月額料金</td>
+                    <td>ご利用時間</td>
+                  </tr>
+                  <tr>
+                    <th>一般会員</th>
+                    <td>25,000円</td>
+                    <td>オールタイム利用可能</td>
+                  </tr>
+                  <tr>
+                    <th>ナイト会員</th>
+                    <td>20,000円</td>
+                    <td>全日 19:00〜22:00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </article>
+          <article class="c-plan">
+            <h2 class="c-plan__head--second">スポットプラン</h2>
+            <div class="c-plan__content">
+              <div>
+                <div class="c-plan__descriptions">
+                  <p>
+                    定期的にお越し頂けない方やトレーニング終了後のメンテナンスの方におすすめプランです。単に痩せるのでも、無駄に筋肉の量を増やすのでもなく、あなたに合う美しいカラダ作りを目指します。筋肉質で体が大きい、太っているので痩せたい、細いのでバランスを整えたいなど、ダイエット、運動不足解消、ボディメイクなどお客様のご要望はさまざまです。<br />
+                    あなたが一番美しくなるメニューを考え、鍛え、励まし、あなたの理想を叶えます。
+                  </p>
+                </div>
+              </div>
+              <div class="c-plan__table-wrapper">
+                <table class="c-plan__table--second">
+                  <tr>
+                    <th>ナイト会員</th>
+                    <td>8,000円</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </article>
+          <div class="p-price__btn">
+            <a href="#" class="c-btn">他のプランも見る</a>
+          </div>
+        </div>
+      </section>
+      <section class="p-info" id="info">
+        <div class="u-container">
+          <h1 class="p-info__head">施設紹介</h1>
+          <ul class="p-info__lists">
+            <li class="p-info__item">
+              <div class="p-info__thumb">
+                <img src="./assets/images/info_img1.png" alt="" />
+              </div>
+              <p class="p-info__description">ゆったりくつろげる広い受付</p>
+            </li>
+            <li class="p-info__item">
+              <div class="p-info__thumb">
+                <img src="./assets/images/info_img2.png" alt="" />
+              </div>
+              <p class="p-info__description">
+                充実した設備のトレーニングルーム
+              </p>
+            </li>
+            <li class="p-info__item">
+              <div class="p-info__thumb">
+                <img src="./assets/images/info_img3.png" alt="" />
+              </div>
+              <p class="p-info__description">
+                いつでも使用可能なシャワールーム
+              </p>
+            </li>
+          </ul>
+          <div class="p-info__btn">
+            <a href="#" class="c-btn">自慢の設備一覧へ</a>
+          </div>
+        </div>
+      </section>
+      <section class="p-access" id="access">
+        <div class="u-container">
+          <h1 class="p-access__head">アクセス</h1>
+          <address class="p-access__address">
+            <address>
+              <p>
+                〒108-0074 東京都港区高輪3丁目26-27<br />山手線 品川駅 徒歩1分
+              </p>
+            </address>
+          </address>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.2009801313743!2d139.69324501608943!3d35.622771540781635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b2a354b0fad%3A0xb630927ae183e118!2z55uu6buS5Yy656uL5pyI5YWJ5Y6f5bCP5a2m5qCh!5e0!3m2!1sja!2sjp!4v1638871114537!5m2!1sja!2sjp"
+            width="100%"
+            height="320"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+      <section class="p-contact" id="contact">
+        <div class="u-container">
+          <h1 class="p-contact__head">理想の体型を目指しませんか。</h1>
+          <p class="p-contact__description">
+            体験トレーニングや見学も可能ですので是非店舗までお越しください。
+          </p>
+          <p class="p-contact__description">
+            お電話でのお問い合わせは<a href="tel:00000000000"
+              >（000-0000-0000）</a
+            >まで。
+          </p>
+          <div class="p-contact__btn">
+            <a href="#" class="c-btn">お問い合わせする</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer u-text-center">
+      <small>Copyright &copy; 2020 sport gym All Rights Reserved</small>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

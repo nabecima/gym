@@ -1,0 +1,31 @@
+.c-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1.65rem 6.5rem;
+  color: $white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.7;
+  background-color: $primary;
+  border-radius: 50px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16.3px;
+    width: 7px;
+    height: 1px;
+    background-color: $white;
+    transform-origin: right;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(25deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(335deg);
+  }
+}

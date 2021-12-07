@@ -1,0 +1,32 @@
+.p-features {
+  padding: 8rem 0;
+  background-color: $dark-gray;
+
+  &__head {
+    color: $white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    margin-bottom: 3.2rem;
+
+    &::after {
+      content: url(../images/feature_icon.png);
+      display: block;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @include mq("lg") {
+    padding: 4rem 0;
+
+    &__lists {
+      flex-direction: column;
+    }
+  }
+}

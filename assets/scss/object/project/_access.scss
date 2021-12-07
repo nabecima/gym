@@ -1,0 +1,29 @@
+.p-access{
+  padding: 8rem 0;
+
+  &__head{
+    color: $black;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 3.1rem;
+
+    &::after{
+      content: url(../images/price_icon.png);
+      display: block;
+    }
+  }
+
+  &__address{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.9;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  @include mq('lg'){
+    padding: 5.9rem 0 3.4rem;
+  }
+}

@@ -1,0 +1,24 @@
+$breakpoints: (
+  "sm": "screen and (max-width: 400px)",
+  "md": "screen and (max-width: 768px)",
+  "lg": "screen and (max-width: 1000px)",
+  "xl": "screen and (max-width: 1200px)",
+) !default;
+
+$primary: #c80012;
+$black: #333;
+$white: #fcfcfc;
+$gray: #ddd;
+$dark-gray: #555;
+$text-shadow: rgba(0, 0, 0, 0.5);
+$nav-panel: rgba(0, 0, 0, 0.9);
+
+$gradient: (
+  "red": $primary,
+  "dark-red": #3c0012,
+);
+
+$fv-filter: (
+  "red-a": rgba(200, 0, 18, 0.5),
+  "dark-red-a": rgba(60, 0, 18, 0.5),
+);

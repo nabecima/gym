@@ -1,0 +1,56 @@
+.p-contact{
+  position: relative;
+  z-index: 0;
+  padding: 7.9rem 0;
+  background-image: url(../images/contact_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    content: "";
+    display: block;
+    height: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(map-get($fv-filter, "red-a"),
+      map-get($fv-filter, "dark-red-a"));
+  }
+
+  &__head{
+    color: $white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 3.1rem;
+
+    &::after{
+      content: url(../images/feature_icon.png);
+      display: block;
+    }
+  }
+
+  &__description{
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.9;
+    text-align: center;
+
+    &:last-of-type{
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__btn{
+    text-align: center;
+  }
+
+  @include mq('lg'){
+    padding: 4.6rem 0 4rem;
+    background-position: center;
+  }
+}

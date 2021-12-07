@@ -1,0 +1,143 @@
+.c-plan{
+  margin-bottom: 4rem;
+  border: 1px solid $gray;
+
+  &:last-of-type{
+    margin-bottom: 2.4rem;
+  }
+
+  &__head{
+    padding: 1.6rem 0;
+    color: $primary;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.1;
+    text-align: center;
+    background-color: $gray;
+    $this: &;
+
+    &--first{
+      @extend #{$this};
+      &::before{
+        content: '生活の変化に合わせられる';
+        display: block;
+        margin-bottom: 1rem;
+        color: $black;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.8;
+      }
+    }
+
+    &--second{
+      @extend #{$this};
+      &::before{
+        content: '定期的にお越し頂けない方の';
+        display: block;
+        margin-bottom: 1rem;
+        color: $black;
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  &__content{
+    padding: 4.9rem 4rem 4.2rem;
+
+    & > div:first-child{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__thumb{
+    width: 30%;
+  }
+
+  &__descriptions{
+    width: 66%;
+
+    p{
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 1.9;
+
+      &:not(:last-child){
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  &__table-wrapper{
+    width: 100%;
+    overflow-x: scroll;
+
+    @media screen and (max-width: 794px) {
+      &::-webkit-scrollbar {
+        height: 13px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $gray;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $primary;
+      }
+    }
+  }
+
+  &__table{
+    table-layout: fixed;
+    width: 100%;
+    min-width: 680px;
+    border-collapse: collapse;
+
+    th,td{
+      padding: 1.6rem;
+      border: 1px solid $gray;
+    }
+
+    $this: &;
+
+    &--first{
+      @extend #{$this};
+      tr:first-child{
+        td{
+          background-color: $gray;
+        }
+      }
+    }
+
+    &--second{
+      @extend #{$this};
+      th{
+        background-color: $gray;
+      }
+    }
+
+
+  }
+
+  @include mq('lg'){
+    &:last-of-type{
+      margin-bottom: 4rem;
+    }
+    &__content{
+      padding: 2.4rem;
+
+      &>div:first-child {
+        flex-direction: column;
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__thumb, &__descriptions{
+      width: 100%;
+    }
+  }
+}
