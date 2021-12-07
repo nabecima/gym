@@ -785,7 +785,14 @@ body.is-active {
   overflow-x: scroll;
 }
 
+.c-plan__table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (max-width: 794px) {
+  .c-plan__table-wrapper::-webkit-scrollbar {
+    display: block;
+  }
   .c-plan__table-wrapper::-webkit-scrollbar {
     height: 13px;
   }

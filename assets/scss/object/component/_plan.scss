@@ -75,8 +75,15 @@
   &__table-wrapper{
     width: 100%;
     overflow-x: scroll;
+    &::-webkit-scrollbar{
+      display: none;
+    }
 
     @media screen and (max-width: 794px) {
+      &::-webkit-scrollbar {
+        display: block;
+      }
+
       &::-webkit-scrollbar {
         height: 13px;
       }
